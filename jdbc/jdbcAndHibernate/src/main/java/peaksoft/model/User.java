@@ -1,6 +1,7 @@
 package peaksoft.model;
-
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Table
 public class User {
@@ -57,4 +58,8 @@ public class User {
         this.age = age;
     }
 
+    @Override
+    public  String toString() {
+        return  id +"  "+ name + "  " + lastName + "  " + age +"\n";
+    }
 }
