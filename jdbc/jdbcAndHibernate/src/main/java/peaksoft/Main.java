@@ -1,7 +1,4 @@
 package peaksoft;
-
-import org.postgresql.util.PSQLException;
-import peaksoft.model.User;
 import peaksoft.service.UserService;
 import peaksoft.service.UserServiceImpl;
 

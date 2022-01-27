@@ -5,7 +5,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import static peaksoft.util.Util.connection;
+import static peaksoft.util.HibernateUtil.connection;
 
 public class UserDaoJdbcImpl implements UserDao {
     List<User> list = new ArrayList<>();
@@ -106,4 +106,5 @@ public class UserDaoJdbcImpl implements UserDao {
             System.out.println("таблица уже очищена");
         }
     }
+
 }
